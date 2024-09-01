@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Elección de Personero 2024</title>
+        <link rel="stylesheet" href="lobby.css">
+        <link rel="icon" href="Imagenes/logotipo proyecto.png" type="image/png"> <!-- Enlace al favicon -->
+    <style>
+        .footer {
+            padding-bottom: 60px; /* Aumentado a 60px para mayor espacio */
+        }
+
+        /* Estilos para el recuadro de información */
+        .modal {
+            display: none; /* Oculto por defecto */
+            position: fixed;
+            z-index: 1;
+            left: 0;
+            top: 0;
+            width: 100%;
+            height: 100%;
+            overflow: auto;
+            background-color: rgba(0, 0, 0, 0.5);
+        }
+
+        .modal-content {
+            background-color: #fff;
+            margin: 15% auto;
+            padding: 20px;
+            border: 1px solid #888;
+            width: 80%;
+            position: relative;
+        }
+
+        .close {
+            position: absolute;
+            top: 10px;
+            right: 20px;
+            color: #aaa;
+            font-size: 28px;
+            font-weight: bold;
+            cursor: pointer;
+        }
+
+        .close:hover,
+        .close:focus {
+            color: black;
+            text-decoration: none;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <header class="header">
+        <div class="menu container">
+            <!-- Logo reducido y organizado -->
+            <a href="#" class="logo">
+                <img src="./Imagenes/logotipo proyecto.png" alt="Logotipo Proyecto" style="width: 120px; height: auto;">
+            </a>
+            <input type="checkbox" id="menu">
+            <label for="menu">
+                <img src="Imagenes/menu.png" class="menu-icono" alt="Menu Icon">
+            </label>
+            <nav class="navbar">
+                <ul>
+                    <li><a href="#">Inicio</a></li>
+                    <li><a href="#">Candidatos</a></li>
+                    <li><a href="#">Propuestas</a></li>
+                    <li><a href="#">Contacto</a></li>
+                </ul>
+            </nav>
+        </div>
+        <div class="header-content container">
+            <div class="header-txt">
+                <h1>Elección Personero 2024</h1>
+                <p>
+                    Haga la elección de su personero estudiantil, adapte sus necesidades a las propuestas presentadas por cada uno de los candidatos. Haga de la democracia un método de vida.
+                </p>
+                <!-- Botón para abrir el recuadro de información -->
+                <a href="#" class="btn-1" id="openModalBtn">Información</a>
+            </div>
+        </div>
+    </header>
+
+    <section class="general container">
+        <h2>Candidatos</h2>
+        <div class="general-content">
+            <div class="general-1 txt">
+                <h3>Programa 1</h3>
+                <p>
+                    Haga la elección de su personero estudiantil, adapte sus necesidades a las propuestas presentadas por cada uno de los candidatos. Haga de la democracia un método de vida.
+                </p>
+            </div>
+            <div class="general-2 txt">
+                <h3>Programa 2</h3>
+                <p>
+                    Haga la elección de su personero estudiantil, adapte sus necesidades a las propuestas presentadas por cada uno de los candidatos. Haga de la democracia un método de vida.
+                </p>
+            </div>
+            <div class="general-3 txt">
+                <h3>Programa 3</h3>
+                <p>
+                    Haga la elección de su personero estudiantil, adapte sus necesidades a las propuestas presentadas por cada uno de los candidatos. Haga de la democracia un método de vida.
+                </p>
+            </div>
+        </div>
+        <div class="vote-btn-container" style="text-align: center; margin-top: 20px;">
+            <a href="#" class="btn-vote">Vote aquí</a>
+        </div>
+        <style>
+            .btn-vote {
+                display: inline-block;
+                padding: 10px 20px;
+                color: #ffffff; /* Color de la letra en negro */
+                background-color: #8586bb; /* Fondo blanco */
+                border: 2px solid #ffffff; /* Borde negro */
+                text-decoration: none;
+                font-size: 16px;
+                font-weight: bold;
+                border-radius: 5px; /* Bordes redondeados opcionales */
+                transition: background-color 0.3s, color 0.3s;
+            }
+        
+            .btn-vote:hover {
+                background-color: #4f9abd; /* Fondo negro al pasar el ratón */
+                color: #000000; /* Letra blanca al pasar el ratón */
+            }
+        </style>
+        
+    </section>
+    <section class="info-1">
+        <div class="info-content container">
+            <h2>Propuestas</h2>
+            <div class="info-circle">
+                <div class="circle-txt">
+                    <div class="circle-1">
+                        <h3>8000 M</h3>
+                    </div>
+                    <p>Haga de la democracia un método de vida.</p>
+                </div>
+                <div class="circle-txt">
+                    <div class="circle-1">
+                        <h3>6,5%</h3>
+                    </div>
+                    <p>Haga de la democracia un método de vida.</p>
+                </div>
+                <div class="circle-txt">
+                    <div class="circle-1">
+                        <h3>-35 C</h3>
+                    </div>
+                    <p>Haga de la democracia un método de vida.</p>
+                </div>
+                <div class="circle-txt">
+                    <div class="circle-1">
+                        <h3>8H</h3>
+                    </div>
+                    <p>Haga de la democracia un método de vida.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="general g2 container">
+        <h2>Nuestro Equipo</h2>
+        <div class="general-content">
+            <div class="general-4 txt">
+                <h3>Programa 4</h3>
+                <p>
+                    Haga la elección de su personero estudiantil, adapte sus necesidades a las propuestas presentadas por cada uno de los candidatos. Haga de la democracia un método de vida.
+                </p>
+            </div>
+            <div class="general-5 txt">
+                <h3>Programa 5</h3>
+                <p>
+                    Haga la elección de su personero estudiantil, adapte sus necesidades a las propuestas presentadas por cada uno de los candidatos. Haga de la democracia un método de vida.
+                </p>
+            </div>
+            <div class="general-6 txt">
+                <h3>Programa 6</h3>
+                <p>
+                    Haga la elección de su personero estudiantil, adapte sus necesidades a las propuestas presentadas por cada uno de los candidatos. Haga de la democracia un método de vida.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <section class="info-2">
+        <div class="info-content container">
+            <h2>Reseñas</h2>
+            <div class="testi">
+                <div class="testi-left">
+                    <div class="testi-txt">
+                        <img src="Imagenes/t1.png" alt="Testimonio 1">
+                        <h3>Haga</h3>
+                        <p>
+                            Haga la elección de su personero estudiantil, adapte sus necesidades a las propuestas presentadas por cada uno de los candidatos. Haga de la democracia un método de vida.
+                        </p>
+                    </div>
+                    <div class="testi-txt">
+                        <img src="Imagenes/t2.png" alt="Testimonio 2">
+                        <h3>Haga</h3>
+                        <p>
+                            Haga la elección de su personero estudiantil, adapte sus necesidades a las propuestas presentadas por cada uno de los candidatos. Haga de la democracia un método de vida.
+                        </p>
+                    </div>
+                </div>
+                <div class="testi-right">
+                    <div class="testi-txt">
+                        <img src="Imagenes/t1.png" alt="Testimonio 3">
+                        <h3>Haga</h3>
+                        <p>
+                            Haga la elección de su personero estudiantil, adapte sus necesidades a las propuestas presentadas por cada uno de los candidatos. Haga de la democracia un método de vida.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer container">
+        <h2>Contacto</h2>
+        <form>
+            <input class="campo" type="text" placeholder="Nombre">
+            <input class="campo" type="email" placeholder="Email">
+            <input type="submit" class="btn-2" value="Enviar">
+        </form>
+    </footer>
+
+    <!-- Recuadro de información (modal) -->
+    <div id="myModal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h2>Información Adicional</h2>
+            <p>Aquí puedes incluir la información detallada que deseas que los usuarios lean.</p>
+        </div>
+    </div>
+
+    <script>
+        // Obtener los elementos
+        var modal = document.getElementById("myModal");
+        var btn = document.getElementsByClassName("btn-1")[0];
+        var span = document.getElementsByClassName("close")[0];
+
+        // Cuando el usuario hace clic en el botón, se muestra el modal
+        btn.onclick = function() {
+            modal.style.display = "block";
+        }
+
+        // Cuando el usuario hace clic en la X, se oculta el modal
+        span.onclick = function() {
+            modal.style.display = "none";
+        }
+
+        // Cuando el usuario hace clic fuera del modal, se oculta
+        window.onclick = function(event) {
+            if (event.target == modal) {
+                modal.style.display = "none";
+            }
+        }
+    </script>
+</body>
+</html>
